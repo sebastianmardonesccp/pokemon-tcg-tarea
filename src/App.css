@@ -1,0 +1,147 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.encabezado {
+  background-color: #202b3c;
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+  border-bottom: 5px solid #e63946;
+}
+
+.etiqueta {
+  color: #f3a6aa;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.encabezado h1 {
+  font-size: 38px;
+  margin: 12px 0;
+}
+
+.subtitle {
+  color: #d5dbe4;
+  margin: 0;
+  font-size: 15px;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 35px 20px;
+}
+
+.titulo-coleccion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.titulo-coleccion h2 {
+  color: #202b3c;
+  font-size: 23px;
+  margin: 0 0 5px;
+}
+
+.titulo-coleccion p {
+  color: #777;
+  font-size: 14px;
+  margin: 0;
+}
+
+.cantidad {
+  background-color: #fdebed;
+  color: #d93645;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.cartas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.carta {
+  background-color: white;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.carta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.13);
+}
+
+.carta img {
+  width: 100%;
+  max-width: 210px;
+  height: 260px;
+  object-fit: contain;
+}
+
+.informacion-carta {
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+}
+
+.informacion-carta h3 {
+  font-size: 17px;
+  color: #202b3c;
+  margin: 0 0 7px;
+}
+
+.informacion-carta p {
+  color: #d93645;
+  font-size: 13px;
+  margin: 0;
+}
+
+.mensaje {
+  text-align: center;
+  color: #555;
+  margin: 25px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-size: 12px;
+  border-top: 1px solid #e5e5e5;
+}
+
+@media (max-width: 700px) {
+  .cartas {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .carta img {
+    height: 210px;
+  }
+
+  .encabezado h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 380px) {
+  .cartas {
+    grid-template-columns: 1fr;
+  }
+}
