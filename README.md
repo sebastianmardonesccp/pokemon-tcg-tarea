@@ -1,16 +1,38 @@
-# React + Vite
+# Pokémon TCG
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplicación web desarrollada con React que consume la API pública de TCGDex para mostrar una selección de cartas Pokémon.
 
-Currently, two official plugins are available:
+## Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React
+- JavaScript
+- CSS
+- Vite
+- TCGDex API
 
-## React Compiler
+## Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Consulta de datos mediante una petición GET.
+- Consumo de la API pública TCGDex utilizando `fetch`.
+- Uso de `useEffect` para ejecutar la petición al cargar el componente.
+- Visualización de cartas Pokémon con sus imágenes y nombres.
 
-## Expanding the Oxlint configuration
+## API utilizada
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+[TCGDex API](https://www.tcgdex.net/)
+
+## Aplicación publicada
+
+[Ver Pokémon TCG](https://pokemon-tcg-tarea.vercel.app)
+
+## Ejecución local
+
+Para ejecutar el proyecto en un entorno local:
+
+1. Instalar las dependencias:
+
+   `npm install`
+
+2. Iniciar el servidor de desarrollo:
+
+   `npm run dev`
